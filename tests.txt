@@ -1,0 +1,15 @@
+itching, skin_rash, dischromic _patches
+shivering, chills, watering_from_eyes
+continuous_sneezing, shivering, chills, watering_from_eyes
+stomach_pain, acidity, vomiting, cough
+itching, skin_rash, stomach_pain, burning_micturition
+itching, skin_rash, burning_micturition, spotting_ urination
+muscle_wasting, patches_in_throat, high_fever, extra_marital_contacts
+fatigue, weight_loss, restlessness, lethargy
+fatigue, restlessness, lethargy, irregular_sugar_level
+itching, skin_rash, lethargy, high_fever
+joint_pain, vomiting, yellowish_skin, dark_urine
+itching, fatigue, lethargy, yellowish_skin
+chills, fatigue, cough, breathlessness
+chills, fatigue, cough, high_fever
+breathlessness, sweating, chest_pain,
