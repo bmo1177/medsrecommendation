@@ -1,16 +1,112 @@
-# Personalized-Medical-Recommendation-System-with-Machine-Learning
-Welcome to our cutting-edge Personalized Medical Recommendation System, a powerful platform designed to assist users in understanding and managing their health. Leveraging the capabilities of machine learning, our system analyzes user-input symptoms to predict potential diseases accurately. Here's what sets our system apart:
+Here’s the **revised and complete `README.md`** for your project, now including setup instructions from installing Python to testing the model with a `test.txt` file. It remains concise, professional, and easy to follow for users or reviewers at **Tiaret University**.
 
-User-Friendly Interface: Our intuitive interface allows users to input their symptoms effortlessly, creating a seamless user experience.
+---
 
-Advanced Machine Learning Models: We've integrated state-of-the-art machine learning models that accurately predict diseases based on input symptoms, ensuring reliable and precise results.
+# Personalized Medical Recommendation System with Machine Learning
 
-Tailored Recommendations: Receive personalized recommendations for the top 5 medicines, prescription details, and even workout routines based on the predicted disease.
+Welcome to the **Personalized Medical Recommendation System** — an AI-powered health assistant created for educational purposes at **Tiaret University**. This system helps users identify potential diseases based on their symptoms and provides personalized recommendations, including medications, diet, workouts, and precautions.
 
-Flask App Integration: The entire system is powered by a Flask web application, making it easily accessible to users. Experience the convenience of accessing healthcare recommendations from anywhere.
+---
 
-Privacy and Security: We prioritize user privacy and data security. Your health information is handled with the utmost confidentiality, adhering to the highest industry standards.
+## 🚀 Features
 
-Continuous Improvement: Our system is designed for continuous improvement. As we gather more data, the machine learning models evolve, providing increasingly accurate and relevant recommendations.
+* **Symptom-Based Disease Prediction**
+  Input symptoms manually or via speech to get instant predictions.
 
-Take charge of your health with our Personalized Medical Recommendation System. Your well-being is our priority, and we're dedicated to providing you with the tools and insights you need for a healthier, happier life.
+* **Voice Recognition Support**
+  Describe symptoms using voice input (mic-enabled devices).
+
+* **Tailored Recommendations**
+  Get suggestions for:
+
+  * Top 5 medicines
+  * Precautionary measures
+  * Diet plans
+  * Workouts
+
+* **Flask Web App**
+  Lightweight and easy-to-use interface.
+
+* **Privacy and Safety**
+  User data is kept local and handled securely.
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. 📥 Install Python
+
+Download and install Python 3.10 or newer:
+👉 [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+Make sure to check **"Add Python to PATH"** during installation.
+
+---
+
+### 2. 📁 Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/Personalized-Medical-Recommendation-System.git
+cd Personalized-Medical-Recommendation-System
+```
+
+---
+
+### 3. 📦 Create a Virtual Environment (Optional but Recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+---
+
+### 4. 🔧 Install Dependencies
+
+```bash
+pip install pandas numpy flask sklearn
+```
+
+---
+
+### 5. 📂 Prepare the Model and Files
+
+Make sure the following files are present:
+
+* `model.pkl` – Trained disease prediction model
+* `symptom_df.txt` – List of known symptoms
+* `medications.csv`, `diets.csv`, etc. – Recommendation databases
+* `test.txt` – Contains example symptoms (one per line or comma-separated)
+
+---
+
+### 6. 🌐 Run the Web App
+
+```bash
+python main.py
+```
+
+Then open your browser and go to:
+👉 [http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+---
+
+## ✅ Example `test.txt`
+
+```txt
+fatigue, weight_loss, restlessness, lethargy
+```
+
+---
+
+## 🧑‍💻 Developers
+
+This system was developed anonymously as part of educational projects at **Tiaret University** for both **OSSY** and **Meriom** coursework.
+
+---
+
+## 📌 Notes
+
+* This project is for academic and educational use only.
+* It is **not intended** to replace professional medical advice.
+
