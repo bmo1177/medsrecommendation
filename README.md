@@ -1,4 +1,3 @@
-```markdown
 # Personalized Medical Recommendation System
 
 An AI-powered health assistant that helps users identify potential diseases based on symptoms and provides personalized recommendations for medications, diet, workouts, and precautions.
@@ -81,5 +80,5 @@ Educational project developed at **Tiaret University** for **OSSY** and **Meriom
 
 ## 📄 License
 Academic project - Tiaret University
-```
+
 
