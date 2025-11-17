@@ -1,112 +1,85 @@
-Here’s the **revised and complete `README.md`** for your project, now including setup instructions from installing Python to testing the model with a `test.txt` file. It remains concise, professional, and easy to follow for users or reviewers at **Tiaret University**.
+```markdown
+# Personalized Medical Recommendation System
 
----
-
-# Personalized Medical Recommendation System with Machine Learning
-
-Welcome to the **Personalized Medical Recommendation System** — an AI-powered health assistant created for educational purposes at **Tiaret University**. This system helps users identify potential diseases based on their symptoms and provides personalized recommendations, including medications, diet, workouts, and precautions.
-
----
+An AI-powered health assistant that helps users identify potential diseases based on symptoms and provides personalized recommendations for medications, diet, workouts, and precautions.
 
 ## 🚀 Features
 
-* **Symptom-Based Disease Prediction**
-  Input symptoms manually or via speech to get instant predictions.
+- **Symptom-Based Disease Prediction** - Input symptoms to get instant disease predictions
+- **Voice Recognition Support** - Describe symptoms using voice input (mic-enabled devices)
+- **Personalized Recommendations** - Get suggestions for:
+  - Top 5 medications
+  - Precautionary measures  
+  - Diet plans
+  - Workout routines
+- **Web Interface** - User-friendly Flask web application
+- **Privacy Focused** - User data is processed locally and securely
 
-* **Voice Recognition Support**
-  Describe symptoms using voice input (mic-enabled devices).
+## 🛠️ Installation & Setup
 
-* **Tailored Recommendations**
-  Get suggestions for:
+### 1. Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
 
-  * Top 5 medicines
-  * Precautionary measures
-  * Diet plans
-  * Workouts
-
-* **Flask Web App**
-  Lightweight and easy-to-use interface.
-
-* **Privacy and Safety**
-  User data is kept local and handled securely.
-
----
-
-## 🛠️ Setup Instructions
-
-### 1. 📥 Install Python
-
-Download and install Python 3.10 or newer:
-👉 [https://www.python.org/downloads/](https://www.python.org/downloads/)
-
-Make sure to check **"Add Python to PATH"** during installation.
-
----
-
-### 2. 📁 Clone the Repository
-
+### 2. Clone & Setup
 ```bash
-git clone https://github.com/yourusername/Personalized-Medical-Recommendation-System.git
-cd Personalized-Medical-Recommendation-System
-```
+# Clone repository
+git clone https://github.com/bmo1177/medsrecommendation.git
+cd medsrecommendation
 
----
-
-### 3. 📦 Create a Virtual Environment (Optional but Recommended)
-
-```bash
+# Create virtual environment (Recommended)
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Activate virtual environment
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
----
+### 3. Required Files
+Ensure these files are in your project directory:
+- `model.pkl` - Trained machine learning model
+- `symptom_df.txt` - List of recognized symptoms  
+- `medications.csv` - Medication database
+- `diets.csv` - Diet recommendations
+- `test.txt` - Sample symptoms for testing
 
-### 4. 🔧 Install Dependencies
-
-```bash
-pip install pandas numpy flask sklearn
-```
-
----
-
-### 5. 📂 Prepare the Model and Files
-
-Make sure the following files are present:
-
-* `model.pkl` – Trained disease prediction model
-* `symptom_df.txt` – List of known symptoms
-* `medications.csv`, `diets.csv`, etc. – Recommendation databases
-* `test.txt` – Contains example symptoms (one per line or comma-separated)
-
----
-
-### 6. 🌐 Run the Web App
-
+### 4. Run Application
 ```bash
 python main.py
 ```
+Then open your browser to: `http://127.0.0.1:5000`
 
-Then open your browser and go to:
-👉 [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
----
-
-## ✅ Example `test.txt`
-
-```txt
-fatigue, weight_loss, restlessness, lethargy
+## 📁 Project Structure
+```
+medsrecommendation/
+├── main.py                 # Main application
+├── model.pkl              # Trained ML model
+├── symptom_df.txt         # Symptom database
+├── medications.csv        # Medication data
+├── diets.csv             # Diet recommendations
+├── requirements.txt       # Dependencies
+└── test.txt              # Sample symptoms
 ```
 
----
+## 🧪 Testing
+Use `test.txt` with sample symptoms:
+```
+fatigue, weight_loss, restlessness, lethargy
+fever, cough, headache, body_pain
+```
 
-## 🧑‍💻 Developers
+## 👥 Developers
+Educational project developed at **Tiaret University** for **OSSY** and **Meriom** programs.
 
-This system was developed anonymously as part of educational projects at **Tiaret University** for both **OSSY** and **Meriom** coursework.
+## ⚠️ Important Disclaimer
+> **Warning**: This system is for **educational purposes only**. Not intended to replace professional medical advice. Always consult healthcare providers for medical decisions.
 
----
-
-## 📌 Notes
-
-* This project is for academic and educational use only.
-* It is **not intended** to replace professional medical advice.
+## 📄 License
+Academic project - Tiaret University
+```
 
